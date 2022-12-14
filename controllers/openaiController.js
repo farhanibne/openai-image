@@ -9,7 +9,7 @@ const generateImage = async (req, res) => {
   const { prompt, size } = req.body;
 
   const imageSize =
-    size === 'small' ? '256x256' : size === 'medium' ? '512x512' : '1024x1024';
+    size === 'small' ? '256x256' : '256x256';
 
   try {
     const response = await openai.createImage({
